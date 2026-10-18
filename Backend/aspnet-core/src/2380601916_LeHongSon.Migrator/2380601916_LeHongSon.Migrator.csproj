@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>2380601916_LeHongSon.Migrator</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>2380601916_LeHongSon.Migrator</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>LeHongSon.Migrator</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="appsettings.json;log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Castle.Log4Net" Version="10.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\2380601916_LeHongSon.Core\2380601916_LeHongSon.Core.csproj" />
+    <ProjectReference Include="..\2380601916_LeHongSon.EntityFrameworkCore\2380601916_LeHongSon.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

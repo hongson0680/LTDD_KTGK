@@ -1,0 +1,26 @@
+# Local runtime logs and validation artifacts
+*.log
+.parser-validation/
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Build outputs
+**/bin/
+**/obj/
+**/build/
+**/.dart_tool/
+**/coverage/
+**/TestResults/
+
+# Local databases and credentials
+*.mdf
+*.ldf
+*.pfx
+*.key
+*.pem
+**/secrets.json
